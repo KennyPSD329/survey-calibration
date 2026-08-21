@@ -424,10 +424,10 @@ a:hover { color: var(--accent-hover); }
       <div class="method-card">
         <div class="label">Setting 2 &mdash; external summaries</div>
         <p>
-          Only fitted coefficients and their covariance matrix are available from
-          the external survey (e.g., a published analysis). Calibration constraints
-          are built from the external fitted reduced model, accommodating data-sharing
-          restrictions.
+          When external microdata are unavailable (e.g., due to data-sharing
+          restrictions), point estimation uses only the fitted coefficient
+          estimates from the external analysis; variance estimation additionally
+          requires their variance&ndash;covariance matrix.
         </p>
       </div>
     </div>

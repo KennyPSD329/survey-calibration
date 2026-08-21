@@ -21,8 +21,10 @@ Two settings are considered:
 
 1. **Pooled-sample calibration** — when individual-level microdata from the
    external survey are available, allowing a combined analysis.
-2. **External-summary calibration** — when only fitted coefficients and their
-   covariance matrix are available from a published external analysis.
+2. **External-summary calibration** — when individual-level external data are
+   unavailable. Point estimation uses only the fitted external coefficient
+   estimates; variance estimation additionally requires their variance–covariance
+   matrix.
 
 Taylor linearization variance estimators account for the complex stratified
 multistage cluster designs of both surveys.
