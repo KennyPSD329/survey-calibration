@@ -424,9 +424,9 @@ a:hover { color: var(--accent-hover); }
       <div class="method-card">
         <div class="label">Setting 2 &mdash; external summaries</div>
         <p>
-          Only fitted coefficients and standard errors are available from the
-          external survey (e.g., a published analysis). Calibration constraints are
-          built from the external fitted reduced model, accommodating data-sharing
+          Only fitted coefficients and their covariance matrix are available from
+          the external survey (e.g., a published analysis). Calibration constraints
+          are built from the external fitted reduced model, accommodating data-sharing
           restrictions.
         </p>
       </div>
@@ -464,25 +464,19 @@ a:hover { color: var(--accent-hover); }
           <tr>
             <td>Internal</td>
             <td>NHANES 2003&ndash;2004</td>
-            <td>n&#8321; &asymp; 1,900</td>
+            <td>n&#8321; = 1,543</td>
             <td>DXA body fat (expensive covariate X&#8322;)</td>
           </tr>
           <tr>
             <td>External</td>
-            <td>NHANES 2001&ndash;2002</td>
-            <td>n&#8322; &asymp; 5,000</td>
-            <td>BMI, activity, smoking, alcohol; no DXA</td>
-          </tr>
-          <tr>
-            <td>External</td>
-            <td>NHANES 2005&ndash;2006</td>
-            <td>n&#8322; &asymp; 5,000</td>
+            <td>NHANES 2001&ndash;2002 &amp; 2005&ndash;2006 (combined)</td>
+            <td>n&#8322; = 3,107</td>
             <td>BMI, activity, smoking, alcohol; no DXA</td>
           </tr>
           <tr>
             <td>External</td>
             <td>NHIS 2003&ndash;2004</td>
-            <td>n&#8322; &asymp; 27,000</td>
+            <td>n&#8322; = 24,086</td>
             <td>BMI, activity, smoking, alcohol; no DXA</td>
           </tr>
         </tbody>

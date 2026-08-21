@@ -21,8 +21,8 @@ Two settings are considered:
 
 1. **Pooled-sample calibration** — when individual-level microdata from the
    external survey are available, allowing a combined analysis.
-2. **External-summary calibration** — when only fitted coefficients and standard
-   errors are available from a published external analysis.
+2. **External-summary calibration** — when only fitted coefficients and their
+   covariance matrix are available from a published external analysis.
 
 Taylor linearization variance estimators account for the complex stratified
 multistage cluster designs of both surveys.
@@ -34,10 +34,10 @@ multistage cluster designs of both surveys.
 We apply the proposed methods to estimate the association between all-cause
 mortality (10-year follow-up) and DXA-measured total body fat using:
 
-- **Internal sample**: NHANES 2003–2004 (n₁ ≈ 1,900) — includes DXA body fat
-- **External samples**: NHANES 2001–2002, NHANES 2005–2006, and NHIS 2003–2004
-  (n₂ ≈ 5,000–27,000) — observe BMI, physical activity, smoking, and alcohol,
-  but not DXA body fat
+- **Internal sample**: NHANES 2003–2004 (n₁ = 1,543) — includes DXA body fat
+- **External samples**: NHANES 2001–2002 and 2005–2006 (n₂ = 3,107 combined) and
+  NHIS 2003–2004 (n₂ = 24,086) — observe BMI, physical activity, smoking, and
+  alcohol, but not DXA body fat
 
 ---
 
