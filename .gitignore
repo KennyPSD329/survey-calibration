@@ -1,0 +1,131 @@
+# =============================================================================
+# .gitignore — calibration research repository
+# =============================================================================
+
+# ----- AI / agent configuration (internal, not for public repo) --------------
+CLAUDE.md
+AGENTS.md
+.claude/
+
+# ----- R artifacts -----------------------------------------------------------
+.RData
+.Rhistory
+.Rproj.user/
+*.Rproj
+.Ruserdata
+# NOTE: *.rds is NOT blanket-excluded because processed analysis data in
+# Blind Version/reproducibility_materials/data_application/data/processed/
+# are small (< 350KB each) and enable the fast-route workflow.
+# Exclude only specific large/internal rds files:
+Simulation/Sim Multiple Case 1/results/*.rds
+Simulation/*/results/mc_raw_*.rds
+
+# ----- LaTeX auxiliary files -------------------------------------------------
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+*.lot
+*.lof
+# *.log is excluded below only for simulation logs, not globally,
+# because .log extension conflicts with nothing critical here:
+Simulation/Sim with Pen/*.log
+
+# ----- Windows / macOS artifacts ---------------------------------------------
+__MACOSX/
+.DS_Store
+Thumbs.db
+# Excel lock files
+~$*.xlsx
+~$*.xls
+
+# ----- Internal project administration ---------------------------------------
+Admin/
+Meeting/
+drafts/
+proofs/
+
+# ----- Submission / manuscript archives --------------------------------------
+*.zip
+# Entire Blind Version directory (manuscript sources, dev history, source reproducibility_materials)
+# The clean public copies are in simulation/ and application/ instead.
+Blind Version/
+# Retained for documentation (now redundant with above):
+Blind Version/Main_anonymous.tex
+Blind Version/Main_anonymous.pdf
+Blind Version/Main_with_author.tex
+Blind Version/Main_with_author.pdf
+Blind Version/Main_anonymous.bbl
+Blind Version/Main_with_author.bbl
+Blind Version/ouparticle.cls
+Blind Version/Cover Letter.pdf
+Blind Version/Supplementary_Material_anonymous.tex
+Blind Version/Supplementary_Material_with_author.tex
+
+# ----- Internal research directories not for public release -----------------
+# Chen method comparison development (includes AI session logs and analysis history)
+Chen Method/
+# GENMETA comparison work (excluded per Method A scope)
+GENMETA/
+# Old data application working directory (replaced by application/)
+Data Application/
+# Private R package development
+Self R package/
+# Penalty vs Chen comparison (extension work)
+Simulation_Compare_Penalty_vs_Chen/
+
+# ----- Temporary scratch files (root level) ----------------------------------
+tmp_*.R
+
+# ----- Third-party PDFs (copyright) -----------------------------------------
+Related paper/
+
+# ----- Simulation directories not for public release ------------------------
+# Development history with multiple obsolete versions and log files:
+Simulation/Sim with Pen/
+Simulation/Sim with Pen + Chen/
+# Ongoing / incomplete simulations:
+Simulation/Sim_GENMETA_Maximal_Model_Misspecification/
+Simulation/Sim Multiple Case 2B High Dim Surrogate/
+# Old flat simulation scripts (superseded by reproducibility_materials/):
+Simulation/simulationsYL260125.V1.1.R
+Simulation/simulationsYL260125.V1.2.R
+Simulation/simulationsYL260302.V1.0.R
+Simulation/simulationsYL0417.V1.0.R
+Simulation/beta.est.var_Biometrics_1.R
+# NOTE: Simulation/ (capital S) directory does not exist at this repo root.
+# The old "Simulation/results/" rule has been removed — on Windows (core.ignoreCase=true)
+# it accidentally matched simulation/results/ (the public release folder).
+# The rerun_outputs exclusion below handles the only subfolder that needs excluding.
+
+# ----- Raw data not to be redistributed via GitHub ---------------------------
+# NHIS / NHANES raw public-use files — users should download from CDC/NCHS:
+Blind Version/reproducibility_materials/data_application/data/raw/nhis/nhis_2003_2004.csv
+Blind Version/reproducibility_materials/data_application/data/raw/mortality/
+
+# ----- Supplementary code with machine-specific absolute paths ---------------
+Blind Version/reproducibility_materials/data_application/supplementary_code/
+
+# ----- Reproducibility archive artifacts (named as do-not-include in README) -
+Blind Version/reproducibility_materials/simulation/archive_not_for_submission/
+Blind Version/reproducibility_materials/simulation/results/rerun_outputs/
+Blind Version/reproducibility_materials/simulation/results/Original result file/
+
+# ----- R workspaces in simulation subdirectories ----------------------------
+Simulation/.RData
+
+# ----- Public release folders: generated/optional outputs (not needed for fast route) ---
+simulation/results/rerun_outputs/
+
+# ----- Public release folders: raw data (users download from CDC/NCHS) ----------
+application/data/raw/nhanes/
+application/data/raw/nhis/
+application/data/raw/mortality/
+
+# ----- Note: *.rds note updated ------------------------------------------------
+# Processed data in application/data/processed/*.rds are small public-use
+# summaries (< 350KB each) and are INCLUDED in the repository.
+# The exclusion above applies to simulation/results/rerun_outputs/ only.

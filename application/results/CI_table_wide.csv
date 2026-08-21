@@ -1,0 +1,13 @@
+"","Benchmark__NHANES_01-06.lower","Benchmark__NHANES_01-06.upper","Internal__NHANES_03-04.lower","Internal__NHANES_03-04.upper","NHANES_pooled_calibration.lower","NHANES_pooled_calibration.upper","NHANES_external_calibration.lower","NHANES_external_calibration.upper","NHIS_pooled_calibration.lower","NHIS_pooled_calibration.upper","NHIS_external_calibration.lower","NHIS_external_calibration.upper"
+"(Intercept)",-9.689,-7.826,-11.693,-7.757,-9.795,-7.779,-9.572,-7.339,-8.577,-7.309,-8.425,-7.306
+"RIDAGEYR",0.083,0.111,0.095,0.145,0.083,0.111,0.069,0.104,0.085,0.101,0.085,0.099
+"RIAGENDRFemale",-0.608,-0.111,-1.098,-0.262,-0.603,-0.119,-0.508,0.089,-0.701,-0.418,-0.677,-0.43
+"as.factor(race4)NH-Black",0.287,0.887,0.03,0.919,0.298,0.87,0.265,1.065,0.337,0.684,0.361,0.664
+"as.factor(race4)Hispanic",-0.002,0.88,-0.006,1.352,-0.027,0.904,-0.244,0.89,-0.304,0.171,-0.322,0.111
+"as.factor(race4)NH-Other",-0.539,0.905,-0.782,1.641,-0.427,0.796,-0.926,0.882,-0.467,0.038,-0.536,0.027
+"phys.all",-0.106,0.022,-0.207,0.139,-0.127,0.039,-0.107,0.016,-0.147,0.071,-0.111,0.033
+"as.factor(smk3)1",0.323,1.092,-0.366,0.841,0.348,1.084,0.465,1.457,0.225,0.521,0.257,0.507
+"as.factor(smk3)2",1.075,1.827,0.726,1.961,1.083,1.842,1.065,2.044,0.998,1.358,1.025,1.32
+"as.factor(hvy.drk)1",-0.753,-0.085,-1.224,-0.202,-0.734,-0.11,-0.722,0.144,-0.693,-0.433,-0.668,-0.444
+"as.factor(hvy.drk)2",-0.522,0.465,-0.486,0.446,-0.535,0.462,-0.755,0.679,-0.157,0.196,-0.217,0.277
+"DXDTOFAT",0,0,0,0,0,0,0,0,0,0,0,0
